@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.separator {
+	padding-bottom: 20px;
+	border-bottom: 2px dashed #c5c5c5;
+}
+
+.dragging {
+	border: 2px dashed #00abff;
+	background-color: #e0f7ff;
+}
+
+.loading-spinner {
+	margin: 0 auto;
+	text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0564a3;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start point */
+    }
+    100% {
+        transform: rotate(360deg); /* Full rotation */
+    }
+}
